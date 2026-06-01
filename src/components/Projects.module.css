@@ -195,6 +195,16 @@
 
 .mini:hover { background: var(--surface); }
 
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 8px;
+}
+
 @media (max-width: 760px) {
   .section { padding: 60px 20px; }
   .grid { grid-template-columns: 1fr; }

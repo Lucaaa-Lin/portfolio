@@ -5,10 +5,10 @@ import pvwMenu from '../assets/pvw-menu.mov'
 import pvwPurchase from '../assets/pvw-purchase.mov'
 
 const goals = [
-  { icon: '🎯', title: 'Real user need', desc: 'Built for a friend whose Facebook watch business was getting requests for a proper website.' },
-  { icon: '🎨', title: 'Brand experience over listing', desc: 'Replace cluttered marketplace UX with a refined, editorial product experience.' },
-  { icon: '📱', title: 'Responsive & refined', desc: 'A vintage aesthetic that holds up across every screen size and device.' },
-  { icon: '🗄️', title: 'Scalable CMS pipeline', desc: 'Structured Sanity schemas for watches, images, specs, and metadata.' },
+  { title: 'Real user need', desc: 'Built for a friend whose Facebook watch business was getting requests for a proper website.' },
+  { title: 'Brand experience over listing', desc: 'Replace cluttered marketplace UX with a refined, editorial product experience.' },
+  { title: 'Responsive & refined', desc: 'A vintage aesthetic that holds up across every screen size and device.' },
+  { title: 'Scalable CMS pipeline', desc: 'Structured Sanity schemas for watches, images, specs, and metadata.' },
 ]
 
 const features = [
@@ -37,7 +37,7 @@ const features = [
       </svg>
     ),
     title: 'Dynamic routing',
-    desc: 'Every watch has its own URL generated from the Sanity slug field — clean, shareable, and SEO-friendly.',
+    desc: 'Every watch has its own URL generated from the Sanity slug field to make it clean, shareable, and SEO-friendly.',
   },
   {
     icon: (
@@ -46,7 +46,7 @@ const features = [
       </svg>
     ),
     title: 'Inquiry flow',
-    desc: 'Message-to-purchase model via Formspree — with the watch reference automatically passed through the form, replacing a traditional checkout.',
+    desc: 'Message-to-purchase model via Formspree, with the watch reference automatically passed through the form, replacing a traditional checkout.',
   },
 ]
 
@@ -92,8 +92,8 @@ export default function CaseStudyPVW({ onBack }) {
         </div>
         <h1 className={styles.h1}>Precision Vintage<br />Watches</h1>
         <p className={styles.lead}>
-          A refined online platform for vintage watch collectors — built from a real friend's business need,
-          designed to replace the cluttered marketplace experience with something that actually feels like the product deserves.
+          A refined online platform for vintage watch collectors, built from a real friend's business need, designed to 
+          replace the cluttered marketplace experience with something that actually feels like the product deserves.
         </p>
         <a
           href="https://www.precisionvintage.com.au/"
@@ -118,13 +118,11 @@ export default function CaseStudyPVW({ onBack }) {
         <p className={styles.sectionLabel}>Overview</p>
         <h2 className={styles.h2}>A real business, a real problem</h2>
         <p className={styles.body}>
-          This project started with a genuine user need. A friend had been selling vintage watches on Facebook Marketplace,
-          and as his business grew, more and more customers started asking whether he had a proper website.
-          When I heard about it, I offered to take it on — designing and building the platform from scratch.
+          This project started with a genuine user need. A friend had been selling vintage watches on Facebook Marketplace, and as his 
+          business grew, more and more customers started asking whether he had a website. When I heard about it, I offered to take it on - designing and building the platform from scratch.
         </p>
         <p className={styles.body} style={{ marginTop: 10 }}>
-          The goal was to create something that felt like the watches deserved: clean, editorial, and immersive —
-          a real alternative to the noise of marketplace platforms, built for collectors who care about presentation as much as the product itself.
+          The goal was to create something clean to show off the business’s collection, built for customers who pay attention to the fine details and condition of watches.
         </p>
       </section>
 
@@ -133,8 +131,7 @@ export default function CaseStudyPVW({ onBack }) {
         <p className={styles.sectionLabel}>The problem</p>
         <h2 className={styles.h2}>Marketplaces sell listings. This needed to sell trust.</h2>
         <p className={styles.body}>
-          Most second-hand watch platforms optimise for volume, not experience. For someone browsing a high-value vintage piece,
-          that creates a real problem:
+          Most second-hand watch platforms optimise for volume, not experience. For someone browsing a high-value vintage piece, that creates a real problem:
         </p>
         <div className={styles.goalGrid} style={{ marginTop: 16 }}>
           {goals.map(g => (
@@ -146,8 +143,7 @@ export default function CaseStudyPVW({ onBack }) {
           ))}
         </div>
         <p className={styles.body} style={{ marginTop: 16 }}>
-          For vintage watch buyers, the purchase is never purely functional — it involves collecting, aesthetics, and brand culture.
-          The platform needed to reflect that.
+          For vintage watch buyers, the purchase is never purely functional - it involves collecting, aesthetics, and brand culture. This website aims to enhance these features for customers.
         </p>
       </section>
 
@@ -156,9 +152,8 @@ export default function CaseStudyPVW({ onBack }) {
         <p className={styles.sectionLabel}>Design direction & UX thinking</p>
         <h2 className={styles.h2}>Minimal, editorial, focused on the object</h2>
         <p className={styles.body}>
-          The visual language was built around one idea: get out of the way of the watch.
-          Low-saturation neutrals, generous white space, EB Garamond as the primary typeface, and large product photography —
-          all designed to keep the user's attention on dial details, aging textures, and the story of each piece.
+          The visual language was built around bringing the watches to the forefront. Low-saturation neutral colours, generous white space, EB Garamond as a vintage-style primary typeface, 
+          and large product photography focuses the user's attention on dial details, condition and the history of each piece.
         </p>
         <p className={styles.body} style={{ marginTop: 10 }}>
           UX decisions followed the same principle:
@@ -166,9 +161,9 @@ export default function CaseStudyPVW({ onBack }) {
         <div className={styles.featureList} style={{ marginTop: 16 }}>
           {[
             { title: 'Sticky navigation', desc: 'Keeps filtering accessible during long catalogue browsing without interrupting the visual flow.' },
-            { title: 'Drawer menu and filter on mobile', desc: 'Brand, gender, movement, and sort controls in a slide-in drawer — less clutter, same power.' },
+            { title: 'Brand, gender, movement, and sort controls in a slide-in drawer, allowing for less clutter.' },
             { title: 'Product detail page', desc: 'Full-width hero image, thumbnail gallery with left/right switching, and a clean information hierarchy.' },
-            { title: 'Inquiry flow over checkout', desc: 'An enquiry form replaces a traditional cart — more appropriate for high-value, one-of-a-kind vintage pieces.' },
+            { title: 'Inquiry flow over checkout', desc: 'An enquiry form replaces a traditional cart, matching the preferred business model of the client.' },
           ].map(f => (
             <div key={f.title} className={styles.featureItem}>
               <svg width="18" height="18" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24" aria-hidden="true" style={{ color: 'var(--text-tertiary)', flexShrink: 0, paddingTop: 2 }}>
@@ -193,19 +188,16 @@ export default function CaseStudyPVW({ onBack }) {
         <div className={styles.goalCard} style={{ marginBottom: 12 }}>
           <h3 className={styles.h3} style={{ marginBottom: 6 }}>Phase 1 — Webflow MVP</h3>
           <p className={styles.cardBody}>
-            Started with Webflow to validate the concept quickly and get the site live.
-            Used Webflow CMS for product management, Jetboost for brand/gender/movement filtering and sorting,
-            and custom JavaScript for image switching, thumbnail sync, modal interactions, scroll locking, and overlay control.
+            Started with Webflow to validate the concept quickly and get the site live. Used Webflow CMS for product management, Jetboost for brand/gender/movement filtering 
+            and sorting, and custom JavaScript for image switching, thumbnail sync, modal interactions, scroll locking, and overlay control.
           </p>
         </div>
 
         <div className={styles.goalCard}>
           <h3 className={styles.h3} style={{ marginBottom: 6 }}>Phase 2 — React rebuild</h3>
           <p className={styles.cardBody}>
-            As the project grew, Webflow's limitations became clear: ongoing subscription costs, constraints on complex interactions,
-            and limited scalability. I migrated the entire platform to React + Vite + Sanity CMS.
-            The rebuild added dynamic routing, global search, state-based filter logic, improved component reuse,
-            and a significantly more maintainable codebase.
+            As the project grew, Webflow's limitations became clear: ongoing subscription costs, constraints on complex interactions, and limited 
+            scalability. I migrated the entire platform to React + Vite + Sanity CMS. The rebuild added dynamic routing, global search, state-based filter logic, improved component reuse, and a significantly more maintainable codebase.
           </p>
         </div>
 
@@ -361,30 +353,16 @@ export default function CaseStudyPVW({ onBack }) {
           ))}
         </div>
         <p className={styles.body}>
-          The platform launched successfully with full desktop and mobile responsive design,
-          a CMS-driven product pipeline, dynamic product pages, filtering, sorting, global search,
-          and an inquiry workflow. Migrating from Webflow to React eliminated ongoing subscription costs
-          and gave complete ownership of the codebase.
+          The platform launched successfully with full desktop and mobile responsive design, a CMS-driven product pipeline, dynamic product pages, 
+          filtering, sorting, global search, and an inquiry workflow. Migrating from Webflow to React eliminated ongoing subscription costs and gave complete ownership of the codebase.
         </p>
         <p className={styles.body} style={{ marginTop: 10 }}>
-          Future plans include a user system, favourites functionality, payment integration,
-          and a more complete e-commerce backend.
-        </p>
-      </section>
-
-      {/* ── REFLECTION ── */}
-      <section className={styles.section}>
-        <p className={styles.sectionLabel}>Reflection</p>
-        <h2 className={styles.h2}>What this project actually taught me</h2>
-        <p className={styles.body}>
-          The value of this project isn't the tech stack — it's that every decision was made in response to something real.
-          A friend needed a website. Customers wanted to trust the product. The Webflow subscription was costing money.
-          The mobile experience was broken. Each problem had a consequence, which made solving it feel like it actually mattered.
+          The website has been very well-received by customers, who appreciate the clean aesthetic which brings the produce 
+          photography to the fore and allows for easy navigation. Sales have increased, with organic inquires separate from social platforms.
         </p>
         <p className={styles.body} style={{ marginTop: 10 }}>
-          More than anything, it taught me how to think about trade-offs: when to ship fast with the wrong tool,
-          and when to slow down and rebuild properly. That kind of judgment — knowing which technical debt is acceptable
-          and which isn't — is something you can only develop by working on something real.
+          Starting off working on a contract basis, I was hired part-time to provide ongoing maintenance and upgrades to the website as the business expands. 
+          Future plans include a user system, favourites functionality, payment integration, and a more complete e-commerce backend.
         </p>
       </section>
 

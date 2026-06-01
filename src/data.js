@@ -3,12 +3,12 @@ import pvwDesktop from './assets/desktop.png'
 export const personal = {
   name: 'Zheng Lin',
   title: 'Frontend Developer',
-  tagline: "Frontend developer who cares about design",
+  tagline: "I am a frontend developer who cares about design",
   taglineItalic: "design",
   bio: [
-    `My work focuses on building <strong>clean, responsive, and user-centered digital experiences</strong> that combine thoughtful visual design with practical frontend engineering. I enjoy creating interfaces that not only look refined, but also feel intuitive and functional across different devices and user scenarios.`,
-    `I develop and maintain <strong>Precision Vintage Watches</strong> — a vintage watch platform where I lead website design, frontend development, CMS management, and digital content operations. The platform was rebuilt from Webflow to a custom React + Sanity CMS stack — not because I had to, but because I wanted ownership, performance, and to eliminate ongoing SaaS costs. That kind of thinking is how I approach all my work.`,
-    `I'm currently looking for a <strong>frontend or web developer role</strong> in Sydney or remote — somewhere craft and shipping both matter.`,
+    `My work focuses on building clean and responsive user-centered digital experiences that combine thoughtful visual design with practical frontend engineering. I enjoy creating interfaces that not only look refined, but also feel intuitive and functional across different devices and user scenarios.`,
+    `I currently develop and maintain Precision Vintage Watches, a vintage watch platform where I lead website design, frontend development, CMS management, and digital content operations. The platform was rebuilt from Webflow to a custom React + Sanity CMS stack to improve performance and eliminate ongoing SaaS costs.`,
+    `I'm currently looking for a frontend or web developer role in Sydney or remote.`
   ],
   location: 'Sydney, Australia',
   email: 'zhenglin5154@gmail.com',
@@ -50,6 +50,7 @@ export const projects = [
   },
   {
     id: 'report-gen',
+    status: 'coming-soon',
     hero: false,
     name: 'Automated Report Generator',
     type: 'Full Stack · Desktop App · Graduation',
@@ -61,6 +62,7 @@ export const projects = [
   },
   {
     id: 'sephora',
+    status: 'coming-soon',
     hero: false,
     name: 'Sephora Instagram Analytics',
     type: 'Data Analytics · Computer Vision · AI',
@@ -70,11 +72,24 @@ export const projects = [
     githubUrl: 'https://github.com/yourhandle/sephora-analytics',
     image: null,
   },
+  // {
+  //   id: 'deadtree',
+  //   status: 'coming-soon',
+  //   hero: false,
+  //   name: 'Dead Tree Detection',
+  //   type: 'Computer Vision · AI Research',
+  //   description:
+  //     'Aerial imagery segmentation using YOLOv7, U-Net, and Mask R-CNN with SimAM attention for environmental monitoring.',
+  //   tags: ['Python', 'OpenCV', 'Google Vision', 'OLS / Regression'],
+  //   githubUrl: 'https://github.com/yourhandle/sephora-analytics',
+  //   image: null,
+  // },
 ]
 
 export const miniProjects = [
   {
     id: 'charity',
+    status: 'coming-soon',
     type: 'UI Design · Figma',
     name: 'Charity Website Redesign',
     description:
@@ -84,6 +99,7 @@ export const miniProjects = [
   },
   {
     id: 'heritage',
+    status: 'coming-soon',
     type: 'UI Design · Figma',
     name: 'Chinese Intangible Heritage',
     description:
@@ -93,6 +109,7 @@ export const miniProjects = [
   },
   {
     id: 'tree',
+    status: 'coming-soon',
     type: 'Computer Vision · AI Research',
     name: 'Dead Tree Detection',
     description:

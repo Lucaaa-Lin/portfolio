@@ -96,6 +96,11 @@ function RegularCard({ project }) {
         }
       </div>
       <div className={styles.body}>
+        {project.status === 'coming-soon' && (
+          <span className={styles.statusBadge} style={{ background: '#F3F1EC', color:'#FF4D4F'}}>
+            Coming soon
+          </span>
+        )}
         <p className={styles.type}>{project.type}</p>
         <h3 className={styles.name}>{project.name}</h3>
         <p className={styles.desc}>{project.description}</p>
