@@ -1,10 +1,9 @@
 import pvwDesktop from './assets/desktop.png'
 // ─── PERSONAL INFO ────────────────────────────────────────────────
 export const personal = {
-  name: 'Zheng Lin',
+  name: 'Zheng(Luca) Lin',
   title: 'Frontend Developer',
-  tagline: "I am a frontend developer who cares about design",
-  taglineItalic: "design",
+  tagline: "Hi, this is Luca. I am a full-stack developer!",
   bio: [
     `My work focuses on building clean and responsive user-centered digital experiences that combine thoughtful visual design with practical frontend engineering. I enjoy creating interfaces that not only look refined, but also feel intuitive and functional across different devices and user scenarios.`,
     `I currently develop and maintain Precision Vintage Watches, a vintage watch platform where I lead website design, frontend development, CMS management, and digital content operations. The platform was rebuilt from Webflow to a custom React + Sanity CMS stack to improve performance and eliminate ongoing SaaS costs.`,
@@ -13,7 +12,7 @@ export const personal = {
   location: 'Sydney, Australia',
   email: 'zhenglin5154@gmail.com',
   github: 'https://github.com/Lucaaa-Lin',
-  linkedin: 'https://www.linkedin.com/in/luca-lin-206bb929b/',
+  linkedin: 'https://www.linkedin.com/in/zheng-lin-206bb929b',
   resume: '/resume.pdf',
   available: true,
 }
@@ -53,7 +52,7 @@ export const projects = [
     status: 'coming-soon',
     hero: false,
     name: 'Automated Report Generator',
-    type: 'Full Stack · Desktop App · Graduation',
+    type: 'Full Stack · Desktop App',
     description:
       'Desktop app with React/Electron frontend and Python FastAPI backend. PDF export, data visualisation, JWT auth, email delivery, and guest mode.',
     tags: ['Electron', 'React', 'Python', 'FastAPI', 'Pandas', 'JWT'],
@@ -72,52 +71,20 @@ export const projects = [
     githubUrl: 'https://github.com/yourhandle/sephora-analytics',
     image: null,
   },
-  // {
-  //   id: 'deadtree',
-  //   status: 'coming-soon',
-  //   hero: false,
-  //   name: 'Dead Tree Detection',
-  //   type: 'Computer Vision · AI Research',
-  //   description:
-  //     'Aerial imagery segmentation using YOLOv7, U-Net, and Mask R-CNN with SimAM attention for environmental monitoring.',
-  //   tags: ['Python', 'OpenCV', 'Google Vision', 'OLS / Regression'],
-  //   githubUrl: 'https://github.com/yourhandle/sephora-analytics',
-  //   image: null,
-  // },
-]
-
-export const miniProjects = [
-  {
-    id: 'charity',
-    status: 'coming-soon',
-    type: 'UI Design · Figma',
-    name: 'Charity Website Redesign',
-    description:
-      'UX analysis and redesign of a charity website. Accessibility audit, information architecture, and high-fidelity Figma prototype.',
-    linkLabel: 'View Figma ↗',
-    url: '#',
-  },
-  {
-    id: 'heritage',
-    status: 'coming-soon',
-    type: 'UI Design · Figma',
-    name: 'Chinese Intangible Heritage',
-    description:
-      'Website UI promoting Chinese non-material cultural heritage. Custom visual identity, bilingual layout, and editorial design system.',
-    linkLabel: 'View Figma ↗',
-    url: '#',
-  },
   {
     id: 'tree',
     status: 'coming-soon',
-    type: 'Computer Vision · AI Research',
+    hero: false,
     name: 'Dead Tree Detection',
+    type: 'Computer Vision · AI Research',
     description:
       'Aerial imagery segmentation using YOLOv7, U-Net, and Mask R-CNN with SimAM attention for environmental monitoring.',
-    linkLabel: 'View paper ↗',
-    url: '#',
+    tags: ['Python', 'OpenCV', 'Google Vision', 'OLS / Regression'],
+    githubUrl: 'https://github.com/yourhandle/sephora-analytics',
+    image: null,
   },
 ]
+
 
 // ─── EXPERIENCE ───────────────────────────────────────────────────
 export const experience = [

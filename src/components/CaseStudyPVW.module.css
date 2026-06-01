@@ -398,6 +398,59 @@
   text-align: center;
   font-weight: 300;
 }
+.contrastList {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.contrastHeader {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.contrastLabel {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-tertiary);
+  text-align: center;
+  padding-bottom: 6px;
+  border-bottom: 0.5px solid var(--border);
+}
+
+.contrastRow {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contrastImgs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.contrastImg {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 8px;
+  border: 0.5px solid var(--border);
+  display: block;
+}
+
+.contrastCaption {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  font-weight: 300;
+  text-align: center;
+  padding: 0 40px;
+}
+
 
 @media (max-width: 640px) {
   .videoGrid {

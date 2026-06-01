@@ -3,6 +3,14 @@ import pvwHero from '../assets/hero.png'
 import pvwHome from '../assets/pvw-home.mov'
 import pvwMenu from '../assets/pvw-menu.mov'
 import pvwPurchase from '../assets/pvw-purchase.mov'
+import whome from '../assets/w-home.png'
+import rhome from '../assets/r-home.png'
+import wfilter from '../assets/w-filter.png'
+import rfilter from '../assets/r-filter.png'
+import wblank from '../assets/w-blank.png'
+import rblank from '../assets/r-blank.png'
+import wsearch from '../assets/w-search.png'
+import rsearch from '../assets/r-search.png'
 
 const goals = [
   { title: 'Real user need', desc: 'Built for a friend whose Facebook watch business was getting requests for a proper website.' },
@@ -255,27 +263,50 @@ export default function CaseStudyPVW({ onBack }) {
       {/* ── contrast ── */}
       <section className={styles.section}>
         <p className={styles.sectionLabel}>Before & After</p>
-        <div className={styles.contrastGrid}>
 
-          {/* 左列标题 */}
-          <p className={styles.contrastLabel}>Webflow</p>
-          <p className={styles.contrastLabel}>React</p>
+        <div className={styles.contrastList}>
+
+          {/* 标题行 */}
+          <div className={styles.contrastHeader}>
+            <p className={styles.contrastLabel}>Webflow</p>
+            <p className={styles.contrastLabel}>React</p>
+          </div>
 
           {/* 第一组 */}
-          <ImgPlaceholder label="Webflow — Homepage" />
-          <ImgPlaceholder label="React — Homepage" />
+          <div className={styles.contrastRow}>
+            <div className={styles.contrastImgs}>
+              <img src={whome} alt="Webflow — Homepage" className={styles.contrastImg} />
+              <img src={rhome} alt="React — Homepage" className={styles.contrastImg} />
+            </div>
+            <p className={styles.contrastCaption}>Responsive search bar</p>
+          </div>
 
           {/* 第二组 */}
-          <ImgPlaceholder label="Webflow — Catalogue" />
-          <ImgPlaceholder label="React — Catalogue" />
+          <div className={styles.contrastRow}>
+            <div className={styles.contrastImgs}>
+              <img src={wfilter} alt="Webflow — Filter" className={styles.contrastImg} />
+              <img src={rfilter} alt="React — Filter" className={styles.contrastImg} />
+            </div>
+            <p className={styles.contrastCaption}>Clear function for filter menu</p>
+          </div>
 
           {/* 第三组 */}
-          <ImgPlaceholder label="Webflow — Product detail" />
-          <ImgPlaceholder label="React — Product detail" />
+          <div className={styles.contrastRow}>
+            <div className={styles.contrastImgs}>
+              <img src={wblank} alt="Webflow — Blank state" className={styles.contrastImg} />
+              <img src={rblank} alt="React — Blank state" className={styles.contrastImg} />
+            </div>
+            <p className={styles.contrastCaption}>No results found (filter/search)</p>
+          </div>
 
           {/* 第四组 */}
-          <ImgPlaceholder label="Webflow — Mobile" />
-          <ImgPlaceholder label="React — Mobile" />
+          <div className={styles.contrastRow}>
+            <div className={styles.contrastImgs}>
+              <img src={wsearch} alt="Webflow — Search" className={styles.contrastImg} />
+              <img src={rsearch} alt="React — Search" className={styles.contrastImg} />
+            </div>
+            <p className={styles.contrastCaption}>Adjustments to the mobile interface</p>
+          </div>
 
         </div>
       </section>

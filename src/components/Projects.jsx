@@ -1,4 +1,4 @@
-import { projects, miniProjects } from '../data'
+import { projects} from '../data'
 import styles from './Projects.module.css'
 
 const PlaceholderWatch = () => (
@@ -27,11 +27,17 @@ const PlaceholderChart = () => (
     <path d="M8 20 L18 14 L28 18 L38 8" strokeWidth="1.5" />
   </svg>
 )
+const PlaceholderTree = () => (
+  <svg viewBox="0 0 48 48" fill="none" stroke="#9C9C96" strokeWidth="1.2" width="40" height="40">
+    <path d="M24 6 L36 24 H28 L38 38 H26 V42 H22 V38 H10 L20 24 H12 Z" />
+  </svg>
+)
 
 const placeholders = {
   pvw: PlaceholderWatch,
   'report-gen': PlaceholderReport,
   sephora: PlaceholderChart,
+  tree: PlaceholderTree,
 }
 
 function BtnPrimary({ href, children }) {
@@ -125,23 +131,6 @@ export default function Projects({ onCaseStudy }) {
       <div className={styles.grid}>
         {heroProject && <HeroCard project={heroProject} onCaseStudy={onCaseStudy} />}
         {regularProjects.map(p => <RegularCard key={p.id} project={p} />)}
-
-        <div className={styles.miniRow}>
-          {miniProjects.map((mp, i) => (
-            <div
-              key={mp.id}
-              className={styles.mini}
-              style={i < miniProjects.length - 1 ? { borderRight: '0.5px solid var(--border)' } : {}}
-            >
-              <p className={styles.type} style={{ marginBottom: 6 }}>{mp.type}</p>
-              <h3 className={styles.name} style={{ fontSize: 15, marginBottom: 6 }}>{mp.name}</h3>
-              <p className={styles.desc} style={{ fontSize: 12, marginBottom: 10 }}>{mp.description}</p>
-              <a href={mp.url} className={styles.btnSecondary} style={{ fontSize: 11, padding: '5px 12px' }}>
-                {mp.linkLabel}
-              </a>
-            </div>
-          ))}
-        </div>
       </div>
     </section>
   )
