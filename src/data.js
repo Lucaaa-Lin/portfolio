@@ -91,7 +91,7 @@ export const experience = [
   {
     date: '2026 – Present',
     company: 'Precision Vintage Watches',
-    role: 'Founder · Frontend Developer · Designer',
+    role: 'Web Developer · Digital Designer',
     description:
       'Built and launched a vintage watch e-commerce platform from scratch. Migrated from Webflow to React + Vite + Sanity CMS. Responsible for all frontend development, CMS management, product photography, and digital content operations.',
   },
